@@ -71,7 +71,7 @@ log "Installing Oh My Zsh"
 export RUNZSH=no
 export CHSH=no
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 fi
 
 log "Setting zsh as default shell when available"
